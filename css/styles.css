@@ -87,9 +87,9 @@ body {
     width: 70%;
 }
 
-/* SIGN UP AND LOGIN  */
+/* SIGN UP AND LOGIN */
 
-.login-style {
+.section-style {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -163,9 +163,41 @@ a,a:hover,a:active,a:focus
 		border-radius: 3px;
 		padding: 15px 20px;
 		outline: none;
+    
 	}
 
 	.form input[type=submit-login]:hover{
 		background-color: #38B589;
 		border: 1px solid #38B589;
 	}
+
+    /* DASHBOARD NAVBAR */
+    .nav-pills .pill-1 .nav-link {
+        background-color: #38B589;
+        color: white;
+    }
+    
+    /* STATUS */
+    .badge {
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 1;
+        padding: .375rem .5625rem;
+        font-weight: normal;
+        background-color: rgb(179, 184, 32);
+    }
+    .button 
+    {
+        background-color: #38B589;
+		border: 1px solid #68c3a3;
+		color: #fff;
+		font-weight: 500;
+		font-family: "Open Sans", sans-serif;
+		border-radius: 4px;
+		outline: none;
+        width: 150px;
+        height: 40px;
+        
+    }
+ 
+/* user-dashboard tables */
