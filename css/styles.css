@@ -211,6 +211,24 @@ a,a:hover,a:active,a:focus
         background: linear-gradient(to right, #38B589,#4cd64c );
     }
 
+	.button-add-row1
+    {
+        background-color: #27AE60;
+		border: 1px solid #68c3a3;
+		color: #fff;
+		font-weight: 500;
+		font-family: "Open Sans", sans-serif;
+		border-radius: 2px;
+		outline: none;
+        width: 30px;
+        height: 30px;
+		float: right;
+    }
+
+	.button-add-row1:hover{
+        background: linear-gradient(to right, #38B589,#4cd64c );
+    }
+
 	.button-remove-row
     {
         background-color: #27AE60;
