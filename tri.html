@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   </head>
+<body>
+    <div class="jumbotron jumbotron-fluid" id="dataAdd">
+        <div class="container">
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <label for="surname"></label>
+                <input type="text" class="form-control" id="surname" placeholder="Surname">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="firstname"></label>
+                <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="age"></label>
+                <input type="text" class="form-control" id="age" placeholder="Age">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="educationalLevel"></label>
+                <input type="text" class="form-control" id="educationalLevel" placeholder="Educational Level">
+              </div>     
+            </div>
+            
+    </div>
+     <button id="btn">Add row</button>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+   <script type="text/javascript">
+    $("#btn").click(function(){
+
+var len=$('#dataAdd .container .form-row').length+1;
+
+//if(len>1)
+
+ $("#dataAdd .container:last").append(' <div class="form-row">'+
+                  '<div class="form-group col-md-3">'+
+                   ' <label for="surname'+len+'"></label>'+
+                   ' <input type="Name" class="form-control" id="surname'+len+'" placeholder="Surname"'+
+                 ' </div>'+
+                 '<div class="form-group col-md-3">'+
+                   ' <label for="firstname'+len+'"></label>'+
+                   ' <input type="Name" class="form-control" id="firstname'+len+'" placeholder="Firstname"'+
+                 ' </div>'+
+                 '<div class="form-group col-md-3">'+
+                   ' <label for="age'+len+'"></label>'+
+                   ' <input type="Name" class="form-control" id="age'+len+'" placeholder="Age"'+
+                 ' </div>'+
+                 '<div class="form-group col-md-3">'+
+                   ' <label for="educationalLevel'+len+'"></label>'+
+                   ' <input type="Name" class="form-control" id="educationalLevel'+len+'" placeholder="Educational Level"'+
+                 ' </div>'+
+
+               '</div>');
+
+               });            
+   </script>
+</body>
+</html>
+
+
+                </div>
+            </div>
+
+            <div class="container">
+	<div class="row">
+		<input type="hidden" name="count" value="1" />
+        <div class="control-group" id="fields">
+            <label class="control-label" for="field1">Nice Multiple Form Fields</label>
+            <div class="controls" id="profs"> 
+                <form class="input-append">
+                    <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button></div>
+                </form>
+            <br>
+            <small>Press + to add another form field :)</small>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   </head>
+<body>
+    <div class="jumbotron jumbotron-fluid" id="dataAdd">
+        <div class="container">
+            <div class="form-row">
+              <div class="form-group col-md-7">
+                <label for="inputName1"></label>
+                <input type="Name" class="form-control" id="inputName1" placeholder="Name" v-model="name[]">
+              </div>
+              <div class="form-group col">
+                <label for="inputPassword4"></label>
+                <input type="name" class="form-control" id="inputPassword1" placeholder="Position" v-model="position">
+              </div>
+            </div>
+            
+
+    </div>
+    
+     <button id="btn">Add row</button>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+   <script type="text/javascript">
+    $("#btn").click(function(){
+
+var len=$('#dataAdd .container .form-row').length+1;
+
+//if(len>1)
+
+ $("#dataAdd .container:last").append(' <div class="form-row">'+
+                  '<div class="form-group col-md-7">'+
+                   ' <label for="inputName'+len+'"></label>'+
+                   ' <input type="Name" class="form-control" id="inputName'+len+'" placeholder="Name" v-model="name">'+
+                 ' </div>'+
+                 ' <div class="form-group col">'+
+                 '   <label for="inputPassword4"></label>'+
+                 '   <input type="name" class="form-control" id="inputPassword'+len+'" placeholder="Position" v-model="position">'+
+                 ' </div>'+
+               '</div>');
+
+               });
+            
+   </script>
+</body>
+</html> 
+-->
+
+<div class="form-row" x-data="handler()">
+    <div class="form-group col-md-12">
+    <p>Please provide the following information on all your siblings and provide supporting documents (if 
+        available) to authenticate this.</p>
+
+        <div class="form-group col-md-3" id="survey_options">
+            <label>Surname</label>
+            <input type="text" class="form-control" id="" placeholder="Surname" name="surname[]">
+        </div>
+        <div class="form-group col-md-3" id="survey_options">
+            <label>Firstname</label>
+            <input type="text" class="form-control" id="" placeholder="Firstname" name="firstname[]">
+        </div>
+        <div class="form-group col-md-3" id="survey_options">
+            <label>Age</label>
+            <input type="number" class="form-control" id="" placeholder="Age" name="age[]">
+        </div>
+        <div class="form-group col-md-3" id="survey_options">
+            <label>Educational Level</label>
+            <input type="text" class="form-control" id="" placeholder="Educational Level" name="educationalLevel[]">
+        </div>
