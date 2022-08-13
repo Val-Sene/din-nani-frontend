@@ -123,6 +123,32 @@ a,a:hover,a:active,a:focus
         border: 1px solid #38B589;
        
 	}
+	
+	.form input[type=number]{
+		display: block;
+		width: 100%;
+		height: 48px;
+		padding-left: 15px;
+		border: 1px solid #E8E8E8;
+		border-radius: 3px;
+		margin-bottom: 20px;
+		outline: none;
+        border: 1px solid #38B589;
+       
+	}
+
+	.form input[type=email]{
+		display: block;
+		width: 100%;
+		height: 48px;
+		padding-left: 15px;
+		border: 1px solid #E8E8E8;
+		border-radius: 3px;
+		margin-bottom: 20px;
+		outline: none;
+        border: 1px solid #38B589;
+       
+	}
 
 	.form input[type=password]{
 		display: block;
@@ -238,7 +264,7 @@ a,a:hover,a:active,a:focus
 		font-family: "Open Sans", sans-serif;
 		border-radius: 0px;
 		outline: none;
-        width: px;
+        width: 10px;
         height: 30px;
 		float: left;
 		margin-left: 2px;
@@ -347,7 +373,7 @@ label
 	color: rgb(8, 26, 13);
 	text-transform: uppercase;
 	font-size: 12px;
-	width: 12%;
+	width: 11%;
 	float: left;
 	position: relative;
     
