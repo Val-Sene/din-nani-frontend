@@ -29,14 +29,6 @@ body {
     overflow: hidden;
 }
 
-/*h1 {
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    text-align: center;
-    margin: 30px 0;
-}*/
-
 .header
 #first-header header {
     width: 100%;
@@ -115,58 +107,58 @@ a,a:hover,a:active,a:focus
 .form input[type=text]{
 		display: block;
 		width: 100%;
-		height: 48px;
+		height: 40px;
 		padding-left: 15px;
 		border: 1px solid #E8E8E8;
 		border-radius: 3px;
 		margin-bottom: 20px;
 		outline: none;
-        border: 1px solid #38B589;
+        border: 1px solid #4ECDC4;
        
 	}
 	
 	.form input[type=number]{
 		display: block;
 		width: 100%;
-		height: 48px;
+		height: 40px;
 		padding-left: 15px;
 		border: 1px solid #E8E8E8;
 		border-radius: 3px;
 		margin-bottom: 20px;
 		outline: none;
-        border: 1px solid #38B589;
+        border: 1px solid #4ECDC4;
        
 	}
 
 	.form input[type=email]{
 		display: block;
 		width: 100%;
-		height: 48px;
+		height: 40px;
 		padding-left: 15px;
 		border: 1px solid #E8E8E8;
 		border-radius: 3px;
 		margin-bottom: 20px;
 		outline: none;
-        border: 1px solid #38B589;
+        border: 1px solid #4ECDC4;
        
 	}
 
 	.form input[type=password]{
 		display: block;
 		width: 100%;
-		height: 48px;
+		height: 40px;
 		padding-left: 15px;
 		border: 1px solid #E8E8E8;
 		border-radius: 3px;
 		margin-bottom: 20px;
 		outline: none;
-        border: 1px solid #38B589;
+        border: 1px solid #4ECDC4;
 
 	}
 
 	.form input[type=submit-login]{
-		background-color:#27AE60;
-		border: 1px solid #27AE60;
+		background-color:#4ECDC4;
+		border: 1px solid #4ECDC4;
 		color: #fff;
 		font-weight: 700;
 		font-family: 'Raleway';
@@ -182,38 +174,9 @@ a,a:hover,a:active,a:focus
 	}
 
 	.form input[type=submit-login]:hover{
-		background: linear-gradient(to right, #38B589,#4cd64c );
-		border: linear-gradient(to right, #38B589,#4cd64c );
+		background: linear-gradient(to right, #4ECDC4,#616969);
+		border: linear-gradient(to right, #4ECDC4,#616969 );
 	}
-
-	/* ADMIN LOGIN LINK */
-	.admin-link a:link{
-		cursor: pointer;
-		text-decoration: underline;
-		color:#38B589;
-	}
-	.admin-link a:hover{
-		cursor: pointer;
-		text-decoration: underline;
-		color:#4cd64c;
-	}
-
-	a:link, a:visited {
-		cursor: pointer;
-	  }
-	  
-	  a:link:active, a:visited:active {
-		color: #f4d527;
-	  }
-
-    /* DASHBOARD NAVBAR */
-    .nav-pills .pill-1 .nav-link {
-        background-color:#27AE60;
-        color: white;
-    }
-    .nav-pills .pill-1 .nav-link:hover{
-        background: linear-gradient(to right, #38B589,#4cd64c );
-    }
 
     /* STATUS */
     .badge {
@@ -224,25 +187,42 @@ a,a:hover,a:active,a:focus
         font-weight: normal;
         background-color: rgb(179, 184, 32);
     }
+
+	.form-control-sm{	
+  		padding: 10px 10px;
+  		margin: 5px 0px;
+		font-family: montserrat;
+		width: 100%;
+		border: 1px solid;
+		border-radius: 4px;
+        /* border: 1px solid #7b837a; */
+		border-color: #4ECDC4;
+		font-size: 15px;
+		border-right:3px solid #535858;
+  		
+	}
+
     .button 
     {
-        background-color: #27AE60;
-		border: 1px solid #68c3a3;
+        background-color: #4ECDC4;
+		border: 0px solid #535858;
 		color: #fff;
 		font-weight: 500;
 		font-family: "Open Sans", sans-serif;
-		border-radius: 4px;
+		border-radius: 1px;
 		outline: none;
         width: 150px;
         height: 40px;
+		box-shadow: 0 0 0 2px white, 0 0 0 3px #535858;
 		
     }
     .button:hover{
-        background: linear-gradient(to right, #38B589,#4cd64c );
+        background: linear-gradient(to right, #4ECDC4,#616969 );
     }
+
 	.button-add-row
     {
-        background-color: #27AE60;
+        background-color: #4ECDC4;
 		border: 1px solid #68c3a3;
 		color: #fff;
 		font-weight: 500;
@@ -255,45 +235,8 @@ a,a:hover,a:active,a:focus
     }
 
 	.button-add-row:hover{
-        background: linear-gradient(to right, #38B589,#4cd64c );
+        background: linear-gradient(to right, #4ECDC4,#616969);
     }
-
-	.button-add-row1
-    {
-        background-color: #27AE60;
-		border: 1px solid #68c3a3;
-		color: #fff;
-		font-weight: 500;
-		font-family: "Open Sans", sans-serif;
-		border-radius: 2px;
-		outline: none;
-        width: 30px;
-        height: 30px;
-		float: right;
-    }
-
-	.button-add-row1:hover{
-        background: linear-gradient(to right, #38B589,#4cd64c );
-    }
-
-	.button-remove-row
-    {
-        background-color: #27AE60;
-		border: 1px solid #68c3a3;
-		color: #fff;
-		font-weight: 500;
-		font-family: "Open Sans", sans-serif;
-		border-radius: 0px;
-		outline: none;
-        width: 10px;
-        height: 30px;
-		float: left;
-		margin-left: 2px;
-    }
-	.button-remove-row:hover{
-        background: linear-gradient(to right, #38B589,#4cd64c );
-    }
-
 
     /* MULTI-FORM */
     h3
@@ -302,47 +245,72 @@ a,a:hover,a:active,a:focus
         color:#262626
     }
 
-#msform {
-	width: 100%;
-	margin: 10px auto;
+	/* The side navigation menu */
+.container-main{
+	width: 120%;
 	text-align: center;
 	position: relative;
- 
-}
-
-#msform fieldset{
 	background: rgb(255, 255, 255);
 	border: 0 none;
 	border-radius: 3px;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
-	width: 80%;
-	margin: 0 10%;
+	margin-top: 5px;
 
+}
+
+.new-app{
+	height: 100px;
+	margin: 20px;
+	padding: 30px;
+}
+
+
+.mt {
+	margin-top: 15px;
+	width: 70%;
+	margin-left: 100px;
 	
-	/*stacking fieldsets above each other*/
-	position: relative;
-}
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-	display: none;
 }
 
-
-/*inputs*/
-#msform input, #msform textarea {
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
+.mail-nav {
+    margin:15px;
+	
+}
+.mail-nav li a {
+    border-radius: 15px;
+    -webkit-border-radius:0;
+    border-top:1px solid #f2f3f6;
+    padding:10px;
+    border-right:3px solid rgba(0,0,0,0);
+    color: #111111;
 	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 13px;
-    border: 1px solid #38B589;
+		
 }
+
+.mail-nav>li>a:hover,.mail-nav>li>a:focus {
+    background:#fafafa;
+    color:#4ECDC4;
+    border-right:3px solid #1fb5ad;
+}
+.mail-nav>li.active>a,.mail-nav>li.active>a:hover,.mail-nav>li.active>a:focus {
+    background:#fafafa;
+    color:#4ECDC4;
+    border-right:3px solid #4ECDC4;
+}
+.mail-nav>li+li {
+    margin-left:0;
+    margin-top:0px;
+}
+.mail-nav i{
+    font-size:15px;
+    margin-right:10px;
+}
+
+.mail-nav {
+    margin:15px;
+}
+
 
 label
 {
@@ -389,7 +357,7 @@ label
 	counter-reset: step;
    
 }
-#progressbar li {
+/* #progressbar li {
 	list-style-type: none;
 	color: rgb(8, 26, 13);
 	text-transform: uppercase;
@@ -398,8 +366,8 @@ label
 	float: left;
 	position: relative;
     
-}
-#progressbar li:before {
+} */
+/* #progressbar li:before {
 	content: counter(step);
 	counter-increment: step;
 	width: 30px;
@@ -411,9 +379,9 @@ label
 	border-radius: 3px;
 	margin: 0 auto 5px auto;
     
-}
+} */
 /*progressbar connectors*/
-#progressbar li:after {
+/* #progressbar li:after {
 	content: '';
 	width: 100%;
 	height: 2px;
@@ -422,17 +390,17 @@ label
 	left: -50%;
 	top: 9px;
 	z-index: -1; /*put it behind the numbers*/
-}
+} */
 #progressbar li:first-child:after {
 	/*connector not needed before the first step*/
 	content: none; 
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
+/* #progressbar li.active:before,  #progressbar li.active:after{
 	background: #27AE60;
 	color: white;
-}
+} */
 
 /* FOOTER */
 .site-footer
@@ -594,3 +562,4 @@ label
     font-weight:600
   }
 }
+
