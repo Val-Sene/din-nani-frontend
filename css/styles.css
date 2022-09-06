@@ -38,15 +38,13 @@ body {
 }
 
 .logo,
-#first-header header #logo {
-    width: 80px;
-    height: 20px;
-    background: #cccccc;
-    position: absolute;
-    top: 12%;
-    left: 100px;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+#first-header header #logo >img {
+    width: 100px;
+    height: 90px;
+    float: left;
+    position: relative;
+    left: 50px;
+    margin-top: 5px;
 }
 
 #first-header header #nav-menu {
@@ -83,11 +81,6 @@ body {
 
 /* SIGN UP AND LOGIN */
 
-/*.section-style {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}*/
-
 a{
     color: #262626;
     transition: all 0.125s ease-in-out 0s;
@@ -109,12 +102,11 @@ a,a:hover,a:active,a:focus
 		width: 100%;
 		height: 40px;
 		padding-left: 15px;
-		border: 1px solid #E8E8E8;
-		border-radius: 3px;
+		border-radius: 2px;
 		margin-bottom: 20px;
 		outline: none;
-        border: 1px solid #4ECDC4;
-       
+    border: 1px solid #4ECDC4;
+    border-right:3px solid #535858;   
 	}
 	
 	.form input[type=number]{
@@ -122,12 +114,12 @@ a,a:hover,a:active,a:focus
 		width: 100%;
 		height: 40px;
 		padding-left: 15px;
-		border: 1px solid #E8E8E8;
-		border-radius: 3px;
+		border-radius: 2px;
 		margin-bottom: 20px;
 		outline: none;
-        border: 1px solid #4ECDC4;
-       
+    border: 1px solid #4ECDC4;
+    border-right:3px solid #535858;
+   
 	}
 
 	.form input[type=email]{
@@ -135,11 +127,11 @@ a,a:hover,a:active,a:focus
 		width: 100%;
 		height: 40px;
 		padding-left: 15px;
-		border: 1px solid #E8E8E8;
-		border-radius: 3px;
+		border-radius: 2px;
 		margin-bottom: 20px;
 		outline: none;
-        border: 1px solid #4ECDC4;
+    border: 1px solid #4ECDC4;
+    border-right:3px solid #535858;
        
 	}
 
@@ -148,11 +140,11 @@ a,a:hover,a:active,a:focus
 		width: 100%;
 		height: 40px;
 		padding-left: 15px;
-		border: 1px solid #E8E8E8;
-		border-radius: 3px;
+		border-radius: 2px;
 		margin-bottom: 20px;
 		outline: none;
-        border: 1px solid #4ECDC4;
+    border: 1px solid #4ECDC4;
+    border-right:3px solid #535858;
 
 	}
 
@@ -162,7 +154,7 @@ a,a:hover,a:active,a:focus
 		color: #fff;
 		font-weight: 700;
 		font-family: 'Raleway';
-		border-radius: 3px;
+		border-radius: 2px;
 		padding: 20px 20px;
 		outline: none;
         width: 150px;
@@ -188,20 +180,21 @@ a,a:hover,a:active,a:focus
         background-color: rgb(179, 184, 32);
     }
 
+    /* FORM FIELDS */
 	.form-control-sm{	
-  		padding: 10px 10px;
-  		margin: 5px 0px;
+  	padding: 10px 10px;
+  	margin: 5px 0px;
 		font-family: montserrat;
 		width: 100%;
 		border: 1px solid;
-		border-radius: 4px;
-        /* border: 1px solid #7b837a; */
+		border-radius: 2px;
 		border-color: #4ECDC4;
 		font-size: 15px;
 		border-right:3px solid #535858;
   		
 	}
 
+    /* FORMS BUTTONS */
     .button 
     {
         background-color: #4ECDC4;
@@ -238,14 +231,13 @@ a,a:hover,a:active,a:focus
         background: linear-gradient(to right, #4ECDC4,#616969);
     }
 
-    /* MULTI-FORM */
     h3
     {
         margin-bottom: 20px;
         color:#262626
     }
 
-	/* The side navigation menu */
+	/* SIDE NAV MENU */
 .container-main{
 	width: 120%;
 	text-align: center;
@@ -268,10 +260,12 @@ a,a:hover,a:active,a:focus
 
 .mt {
 	margin-top: 15px;
-	width: 70%;
-	margin-left: 100px;
+	width: 80%;
+	margin-left: 80px;
+  position: relative;
 	
 }
+
 
 .mail-nav {
     margin:15px;
@@ -284,7 +278,7 @@ a,a:hover,a:active,a:focus
     padding:10px;
     border-right:3px solid rgba(0,0,0,0);
     color: #111111;
-	font-family: montserrat;
+	  font-family: montserrat;
 		
 }
 
@@ -307,11 +301,41 @@ a,a:hover,a:active,a:focus
     margin-right:10px;
 }
 
-.mail-nav {
-    margin:15px;
+/*THE USER DASHBOARD NAV*/
+.mail-nav-user{
+  list-style: none;
+}
+
+.mail-nav-user > li{
+  float: left;
+  padding: 15px;
+ 
+}
+
+.mail-nav-user >li >a{
+  border-radius: 2px;
+  border-top:1px solid #f2f3f6;
+  padding: 10px;
+  border-right:3px solid rgba(0,0,0,0);
+  font-family: montserrat;
+  width: 200px;
+
+}
+
+.mail-nav-user>li>a:hover,.mail-nav-user>li>a:focus {
+  background:#fafafa;
+  color:#4ECDC4;
+  border-right:3px solid #1fb5ad;
+}
+
+.mail-nav-user>li.active>a,.mail-nav-user>li.active>a:hover,.mail-nav-user>li.active>a:focus {
+  background:#fafafa;
+  color:#4ECDC4;
+  border-right:3px solid #4ECDC4;
 }
 
 
+    /* GENERAL LABELS */
 label
 {
     font-family: montserrat;
@@ -319,8 +343,8 @@ label
     float: left;
 }
 
-/*buttons*/
-#msform .action-button {
+/* bUTTONS */
+/* #msform .action-button {
 	width: 100px;
 	background: #27AE60;
 	font-weight: bold;
@@ -337,7 +361,7 @@ label
 
 }
 /*headings*/
-.fs-title {
+/* .fs-title {
 	font-size: 15px;
 	text-transform: uppercase;
 	color: #2C3E50;
@@ -350,13 +374,13 @@ label
 	margin-bottom: 20px;
 }
 /*progressbar*/
-#progressbar {
+/* #progressbar {
 	margin-bottom: 30px;
 	overflow: hidden;
 	/*CSS counters to number the steps*/
-	counter-reset: step;
+	/* counter-reset: step;
    
-}
+} */
 /* #progressbar li {
 	list-style-type: none;
 	color: rgb(8, 26, 13);

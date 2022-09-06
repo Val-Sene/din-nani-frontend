@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/icons.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 	</head>
@@ -10,12 +9,9 @@
 	<!--NAVBAR -->
 	<div id="first-header">
 	  <header>
-	    <div id="logo"></div>
-	    <div id="menu-icon">
-	      <div class="bar"></div>
-	      <div class="bar"></div>
-	      <div class="bar"></div>
-	    </div>
+	    <div id="logo">
+			<img src="res/dinnani.jpg" alt="alternatetext">	
+		</div>
 	    <div id="nav-menu">
 				<a href="#">HOME</a>
 				<a href="#">ALL ABOUT US</a>
@@ -26,21 +22,21 @@
 	  </header>
 	</div>
 	<!-- /NAVBAR -->
-
     <!-- DASHBOARD NAVBAR -->
     	<section class="section-style">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-xs-12">
-					<h2 class="text-uppercase">Welcome, username</h2><hr><br>
+					<h2 class="text-uppercase">Welcome, username</h2><hr>
 				</div>
             <div class="col-lg-12 col-md-12 col-xs-12">
-                <ul class="nav nav-pills nav-fill">
-                <li class="nav-item pill-1">
-                <a class="nav-link active" data-toggle="tab" href="#tab1">MY APPLICATIONS</a></li>
-                <li role="presentation"><a href="#">MY PROFILE</a></li>
-                </ul><br>
+                <ul class="nav nav-pills mail-nav-user">
+                <li class="active"><a data-toggle="tab" href="user-dashboard.html">MY APPLICATIONS</a></li>
+                <li><a href="my-profile.html">MY PROFILE</a></li>
+                </ul><br><br><br>
             </div>
+		</div>
+
             <div class="col-lg-12 col-md-12 col-xs-12">
 					<p class="text-center" style="color:red; font-size:110%"> <i>Applicants may only submit one application per term.</i></p><br>
                     <p class="text-center"">  If you have questions about selecting an academic program, we encourage you to contact an admissions representative before submission.<br>
@@ -48,8 +44,7 @@
 				</div>
              <br>
            
-    <!-- /DASHBOARD NAVBAR -->
-            
+    <!-- /DASHBOARD NAVBAR -->       
     <!-- DASHBOARD TABLES -->
     <div class="container">
     	<div class="row">
@@ -99,7 +94,6 @@
 			  <p class="text-justify">The Din-Nani Educational Support Foundation is a local non-political organization established to assist in dealing with the present socio-economic problems facing the youth of Dagbandabifong.
 			Dagbandabifong is a suburb in the Tamale Metropolitan Area with all the indicators of urban poverty.</p>
 			</div>
-  
 			<div class="col-xs-6 col-md-3">
 			  <h6>Menu</h6>
 			  <ul class="footer-links">
@@ -110,7 +104,6 @@
 				<li><a href="">Apply Now</a></li>
 			  </ul>
 			</div>
-  
 			<div class="col-xs-6 col-md-3">
 			  <h6>Contact Us</h6>
 			  <span class="material-symbols-outlined">location_on</span><br>NT-0008-0850, Dagmaa Street.Dagbandabifong<br> P. O. Box T 63<br>Tamale Northern Region, Ghana.<br><br>
@@ -143,13 +136,10 @@
     
      <!-- Vendor js -->
         <script src="./js/vendor.min.js"></script>
-
         <!-- Plugins js-->
         <script src="./lib/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
-
         <!-- Init js-->
         <script src="./js/form-wizard.init.js"></script>
-
         <!-- App js -->
         <script src="./js/app.min.js"></script>
 	</body>
